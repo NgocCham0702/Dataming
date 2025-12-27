@@ -4,7 +4,7 @@ import sqlite3
 
 
 def setup_database():
-    conn = sqlite3.connect("itviec_jobs.db")
+    conn = sqlite3.connect("itviec_jobs_1.db")
     cursor = conn.cursor()
     # Tạo bảng với đầy đủ các cột thông tin
     cursor.execute(
@@ -84,7 +84,9 @@ with sync_playwright() as p:
     conn.commit()
     conn.close()
 
-    print("\n✅ Đã lưu tất cả dữ liệu vào file 'itviec_jobs.db'!")
+    print("\n✅ Đã lưu tất cả dữ liệu vào file 'itviec_jobs_1.db'!")
 
     input("Nhấn Enter để đóng trình duyệt...")
     browser.close()
+# ============ crawl itviec.com và lưu dữ liệu vào itviec_jobs.db xong roi =======
+# du lieu co ban thoi dung cho topcv luon
